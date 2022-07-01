@@ -1,0 +1,16 @@
+const categoriesEl = document.querySelectorAll('li.item');
+
+console.log(`Number of categories: ${categoriesEl.length}`);
+
+const elementsEl = (array = categoriesEl) => {
+    [...categoriesEl].map(category => {
+            const categoryNameEl = category.firstElementChild.textContent;
+            const elementsQuantity = category.lastElementChild.children.length;
+
+            console.log(`Category: ${categoryNameEl}
+Elements: ${elementsQuantity}`);
+        })
+    
+};
+
+elementsEl()
