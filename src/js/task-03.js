@@ -19,6 +19,7 @@ const galleryItemsEl = images.map(image =>
   `<li><img src = ${image.url} alt = ${image.alt} width = 320></li>`).join('');
 galleryEl.insertAdjacentHTML('afterbegin', galleryItemsEl);
 
+galleryEl.style.listStyle = 'none';
 galleryEl.style.display = 'flex';
 galleryEl.style.flexWrap = 'wrap';
 galleryEl.style.alignItems = 'center';
