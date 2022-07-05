@@ -25,11 +25,10 @@ function createBoxes(amount) {
     mainDivEl.append(box);
     boxSize += 10;
   }
-  console.log('create button clicked')
 }
 
 
 function destroyBoxes() {
   mainDivEl.innerHTML = '';
-  console.log('destroy button clicked')
+  inputEl.value = '';
 }
